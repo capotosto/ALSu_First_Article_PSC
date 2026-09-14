@@ -458,9 +458,6 @@ class PSCModel:
 # Define the Registry of all known units
 MODELS = {
     # 4-Channel Units
-    """
-    Used for temporary testing of Cell 29 PSCs with 83.33 Ohm burdens, comps 1k/1k/2k/470, 4u7, 2u2, 4u7, 4u7. 
-    No longer used!"""
     "ALSu_1ST_ARTICLE_4-CH-SLOW_HSS": PSCModel(
             model_id="ALSu_1ST_ARTICLE_4-CH-SLOW_HSS",
             display_name="ALSu_1ST_ARTICLE_4-CH-SLOW_HSS", # - BIPOLAR -- 33.3R/1k/2u2 BUR/COMP, 'SKQ' TUNING BRD",
@@ -508,10 +505,10 @@ MODELS = {
                                             ch2=23.9,
                                             ch3=23.9,
                                             ch4=23.9),
-                ramp_rate=ChannelValues(ch1=10,
-                                        ch2=10,
-                                        ch3=10,
-                                        ch4=10),
+                ramp_rate=ChannelValues(ch1=20,
+                                        ch2=20,
+                                        ch3=20,
+                                        ch4=20),
                 settling_time=10,
                 tolerance=0.05),
             jump=JumpTestParams(
@@ -571,10 +568,10 @@ MODELS = {
                                             ch2=23.9,
                                             ch3=23.9,
                                             ch4=23.9),
-                ramp_rate=ChannelValues(ch1=10,
-                                        ch2=10,
-                                        ch3=10,
-                                        ch4=10),
+                ramp_rate=ChannelValues(ch1=20,
+                                        ch2=20,
+                                        ch3=20,
+                                        ch4=20),
                 settling_time=10,
                 tolerance=0.05),
             jump=JumpTestParams(
@@ -634,10 +631,10 @@ MODELS = {
                                         ch2=23.9,
                                         ch3=23.9,
                                         ch4=23.9),
-            ramp_rate=ChannelValues(ch1=10,
-                                    ch2=10,
-                                    ch3=10,
-                                    ch4=10),
+            ramp_rate=ChannelValues(ch1=20,
+                                    ch2=20,
+                                    ch3=20,
+                                    ch4=20),
             settling_time=10,
             tolerance=0.05),
         jump=JumpTestParams(
@@ -689,8 +686,8 @@ MODELS = {
                                             ch2=0),
             end_setpoints=ChannelValues(ch1=23.9,
                                         ch2=23.9),
-            ramp_rate=ChannelValues(ch1=10,
-                                    ch2=10),
+            ramp_rate=ChannelValues(ch1=20,
+                                    ch2=20),
             settling_time=10,
             tolerance=0.05),
         jump=JumpTestParams(
