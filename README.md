@@ -1,3 +1,33 @@
+# ALSu First Article Testing
+
+The four First Article PSCs were calibrated and tested using this repository and the following supporting repositories, at the specific commits listed below:
+
+**PSC Firmware:**  
+https://github.com/jamead/zpsc-fw/blob/73ce803b730732d6d288f4628374a8ce30c14e29/builds/BOOT.bin.githash-0x08397BD
+
+**PSC IOC:**  
+https://github.com/jamead/zpsc-ioc/tree/b37cd6c6646c2017eb999e3106d8b7a767b2aa1a
+
+**ATE IOC:**  
+https://github.com/capotosto/ALSu-PSC_ATE-ioc/tree/4123ffc16eefb0d61450317561d8aadfebb54551
+
+## Known Bug
+
+There is a bug in the PSC, believed to be FPGA/firmware-related, that affects the current ramp rate. Positive-slope ramps starting from a positive current (e.g., 0 A to 1 A) exhibit the expected ramp rate. However, the ramp rate is approximately half the setpoint for negative-slope ramps (e.g., 1 A to 0 A) and for positive-slope ramps that begin at a negative current (e.g., −1 A to 0 A).
+
+## Running the Scripts
+
+The calibration and test scripts can be run from `launcher.py`.
+
+If the PSC has not previously been initialized and initial manual testing through the GUI panels is required, the QSPI must first be initialized with default, non-calibration setpoints. This can be done through `launcher.py` using menu option 1, **"Initialize QSPI."**
+
+## Manuals and References
+
+This repository was developed for testing and calibrating NSLS-II units and contains a newer version of the scripts than those used for the ALSu AR and BTA testing. The reference manual was also written for testing and calibrating NSLS-II PSCs.
+
+The NSLS-II repository was cloned and subsequently re-labeled for ALSu use; consequently, references to NSLS-II remain throughout the repository.
+
+
 # NSLS-II zPSC Calibration and Functional Test Suite
 
 A comprehensive software suite for the automated calibration and functional verification of Power Supply Controllers (PSC).
