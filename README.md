@@ -11,6 +11,8 @@ https://github.com/jamead/zpsc-ioc/tree/b37cd6c6646c2017eb999e3106d8b7a767b2aa1a
 **ATE IOC:**  
 https://github.com/capotosto/ALSu-PSC_ATE-ioc/tree/4123ffc16eefb0d61450317561d8aadfebb54551
 
+**PSC SD Card:**
+A new directoy has been added, 'PSC SD Card', containing the boot.bin and NET.cnf used for testing.
 ## Known Bug
 
 There is a bug in the PSC, believed to be FPGA/firmware-related, that affects the current ramp rate. Positive-slope ramps starting from a positive current (e.g., 0 A to 1 A) exhibit the expected ramp rate. However, the ramp rate is approximately half the setpoint for negative-slope ramps (e.g., 1 A to 0 A) and for positive-slope ramps that begin at a negative current (e.g., −1 A to 0 A).
