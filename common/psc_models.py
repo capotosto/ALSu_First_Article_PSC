@@ -686,8 +686,8 @@ MODELS = {
                                             ch2=0),
             end_setpoints=ChannelValues(ch1=23.9,
                                         ch2=23.9),
-            ramp_rate=ChannelValues(ch1=20,
-                                    ch2=20),
+            ramp_rate=ChannelValues(ch1=10,
+                                    ch2=10),
             settling_time=10,
             tolerance=0.05),
         jump=JumpTestParams(
