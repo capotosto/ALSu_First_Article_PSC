@@ -1,3 +1,5 @@
+# ALL DOCUMENTATION IN THIS SECTION IS FOR REFERENCE ONLY. NONE OF THESE CONTENTS ARE UNDER OFFICIAL REVISION CONTROL THROUGH WINDCHILL. 
+
 # ALSu First Article Testing
 
 The four First Article PSCs were calibrated and tested using this repository and the following supporting repositories, at the specific commits listed below:
