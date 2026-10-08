@@ -44,38 +44,40 @@ def prompt_execution_mode():
         print("\n--------------------------------")
         print("Select Execution Mode:")
         print("1. Initialize QSPI Only")
-        print("2. Calibrate Only")
+        #print("2. Calibrate Only")
         print("3. Test Only")
-        print("4. Calibrate and Test")
+        #print("4. Calibrate and Test")
         print("--------------------------------")
 
         selection = str(input("\nEnter selection (1-4): ").strip())
 
         if selection == "1":  # Initialize QSPI Only
             init_qspi = True
-            cal_sel = False
+            #cal_sel = False
             test_sel = False
-            return init_qspi, cal_sel, test_sel
+            return init_qspi, test_sel
 
-        if selection == "2":  # Cal Only
+        """if selection == "2":  # Cal Only
             init_qspi = False
             cal_sel = True
             test_sel = False
             return init_qspi, cal_sel, test_sel
+        """
         elif selection == "3":  # Test Only
             init_qspi = False
-            cal_sel = False
+            #cal_sel = False
             test_sel = True
-            return init_qspi, cal_sel, test_sel
-        elif selection == "4":  # Cal and Test
+            return init_qspi, test_sel
+        """elif selection == "4":  # Cal and Test
             init_qspi = False
             cal_sel = True
             test_sel = True
             return init_qspi, cal_sel, test_sel
+        """
         else:
             print(
                 f"\n[!] Invalid input: '{selection}'. \n"
-                "Please enter 1, 2, or 3."
+                "Please enter 1 or 3."
                 )
 
 
